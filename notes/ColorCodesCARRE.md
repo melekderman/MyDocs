@@ -4,7 +4,7 @@
 
 **Core Palette**  
 → BEAVER ORANGE  
-`#D73F09`
+`#D73F09`  
 → PADDLETAIL BLACK  
 `#000000`   
 → BUCKTOOTH WHITE  
@@ -31,7 +31,7 @@
 `#AA9D2E`  
 → ROGUE WAVE  
 `#0D5257`  
-→ SOLAR FLARE
+→ SOLAR FLARE  
 `#D3832B`  
 → STAR CANVAS  
 `#003B5C`  
