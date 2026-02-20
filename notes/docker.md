@@ -18,6 +18,11 @@ docker run --rm -it ghcr.io/cement-psaap/mcdc:dev
 docker run --rm -it ghcr.io/cement-psaap/mcdc:dev-2025-02-18
 ```
 
+**Test**
+```
+python -c "import mcdc; print('MCDC works')"
+```
+
 ---
 
 ## 2) Windows (Intel/AMD64) — Native ✅ (Docker Desktop + WSL2)
@@ -36,6 +41,11 @@ docker pull ghcr.io/cement-psaap/mcdc:dev-2025-02-18
 docker run --rm -it ghcr.io/cement-psaap/mcdc:dev
 # or:
 docker run --rm -it ghcr.io/cement-psaap/mcdc:dev-2025-02-18
+```
+
+**Test**
+```
+python -c "import mcdc; print('MCDC works')"
 ```
 
 > **Note:** "Linux containers" mode must be enabled in Docker Desktop (this is typically the default).
@@ -60,6 +70,11 @@ docker run --rm -it ghcr.io/cement-psaap/mcdc:dev
 docker run --rm -it ghcr.io/cement-psaap/mcdc:dev-2025-02-18
 ```
 
+**Test**
+```
+python -c "import mcdc; print('MCDC works')"
+```
+
 ---
 
 ## 4) macOS Apple Silicon (M1/M2/M3/M4) — Via Emulation ✅ (may be slower)
@@ -78,6 +93,11 @@ docker pull --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev-2025-02-18
 docker run --rm -it --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev
 # or:
 docker run --rm -it --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev-2025-02-18
+```
+
+**Test**
+```
+python -c "import mcdc; print('MCDC works')"
 ```
 
 ---
