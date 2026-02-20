@@ -10,20 +10,12 @@ docker pull ghcr.io/cement-psaap/mcdc:dev
 docker pull ghcr.io/cement-psaap/mcdc:dev-2025-02-18
 ```
 
-**Pull (digest — most reliable)**
-
-```bash
-docker pull ghcr.io/cement-psaap/mcdc:dev@sha256:337dd8784e7128ac5f678318f9b7d718d3788f978a590c6a2c32e7228096f9a6
-```
-
 **Run**
 
 ```bash
 docker run --rm -it ghcr.io/cement-psaap/mcdc:dev
 # or:
 docker run --rm -it ghcr.io/cement-psaap/mcdc:dev-2025-02-18
-# or with digest:
-docker run --rm -it ghcr.io/cement-psaap/mcdc:dev@sha256:337dd8784e7128ac5f678318f9b7d718d3788f978a590c6a2c32e7228096f9a6
 ```
 
 ---
@@ -86,13 +78,6 @@ docker pull --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev-2025-02-18
 docker run --rm -it --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev
 # or:
 docker run --rm -it --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev-2025-02-18
-```
-
-**(Optional) With digest (pinned amd64)**
-
-```bash
-docker pull --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev@sha256:337dd8784e7128ac5f678318f9b7d718d3788f978a590c6a2c32e7228096f9a6
-docker run  --rm -it --platform=linux/amd64 ghcr.io/cement-psaap/mcdc:dev@sha256:337dd8784e7128ac5f678318f9b7d718d3788f978a590c6a2c32e7228096f9a6
 ```
 
 ---
