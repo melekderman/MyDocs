@@ -8,7 +8,7 @@
 PYTHON_BIN="/usr/tce/packages/python/python-3.11.5/bin"
 CMAKE_BIN="/usr/tce/packages/cmake/cmake-3.29.2/bin"
 VENV_DIR="$(pwd)/venv"
-PYTHON_VERSION="3.11"
+PYTHON_VERSION="3.11.5"
 N_CORES=8
 # =============================================================================
  
@@ -27,9 +27,11 @@ cmake -DCMAKE_BUILD_TYPE=Release ../
 make -j$N_CORES
 cd ../..
  
-# Copy .so into venv
-SO_FILE="ACEtk/build/python/ACEtk.cpython-$(echo $PYTHON_VERSION | tr -d '.')-x86_64-linux-gnu.so"
-cp $SO_FILE $VENV_DIR/lib/python$PYTHON_VERSION/site-packages/
+# Copy .so files into venv
+PY=$(echo $PYTHON_VERSION | tr -d '.')
+SITE_PACKAGES="$VENV_DIR/lib/python$PYTHON_VERSION/site-packages"
+cp ACEtk/build/python/ACEtk.cpython-${PY}-x86_64-linux-gnu.so $SITE_PACKAGES/
+cp ACEtk/build/_deps/tools-build/python/tools.cpython-${PY}-x86_64-linux-gnu.so $SITE_PACKAGES/
 python -c "import ACEtk; print('ACEtk OK')"
  
 # Download EPRDATA14
