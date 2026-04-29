@@ -40,3 +40,12 @@ python -c "import ACEtk; print('OK')"
 wget https://nucleardata.lanl.gov/lib/eprdata14.tgz
 tar -xzf eprdata14.tgz
 ```
+## Set your paths
+```bash
+module load python/3.11.5
+source ~/envs/eprdata_env/bin/activate
+
+export PYTHONPATH=$HOME/4-ACEtk/ACEtk/build/_deps/tools-build/python:$HOME/4-ACEtk/ACEtk/build/python:$PYTHONPATH
+export MCDC_ACELIB=/nfs/stak/users/dermanm/4-ACEtk/epics
+export MCDC_LIB=/nfs/stak/users/dermanm/4-ACEtk/mcdc-lib-e
+```
